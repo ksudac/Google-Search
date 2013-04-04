@@ -14,13 +14,10 @@ html{
 	padding-top: 8px; 
 }
 
-a{
-	text-decoration: none;
-}
-
 .banner > a {
 	color:#bababa;
-	padding: 9px;	
+	padding: 9px;
+	text-decoration: none;
 }
 
 .banner > a:hover {
@@ -31,7 +28,7 @@ a{
 	color:white;
 }
 
-.banner > a > .selected{
+.banner > .selected{
 	color:white;
 }
 
@@ -39,46 +36,76 @@ a{
 	text-align: center;
 }
 
-.logo {
-	padding-top:110px;
+button{
+	border: 1px solid #c5c5c5;
+	cursor: pointer;
+	vertical-align: middle;
+	color:#666666;
+	background: #f7f7f7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#ececec));
+	background: -webkit-linear-gradient(top, #f7f7f7, #ececec);
+	background: -moz-linear-gradient(top, #f7f7f7, #ececec);
+	background: -ms-linear-gradient(top, #f7f7f7, #ececec);
+	background: -o-linear-gradient(top, #f7f7f7, #ececec);
+
 }
 
 .sign_in{
 	text-align: right;
-	padding-right: 50px;
-	padding-top: 20px;
+	padding-right: 25px;
+	padding-top: 19px;
 }
 
-.sign_in > input[type="submit"]{
-	border:2px solid #d8d8d8;
-	padding:5px 14px;
+.sign_in > button{
+	padding: 5px 14px;
 	font-size: 13px;
 	font-weight: lighter;
-	background-color:#f4f4f4;
-	color:#464646;
 }
 
+.logo {
+	padding-top:111px;
+	
+}
+
+input[type="text"] {
+	width:560px;
+	height: 20px;
+	padding: 3px;
+	border: solid thin #d8d8d8;
+	border-top: solid thin #bfbfbf;
+	font-size: 12pt;
+	margin-top: 25px;
+}
+ 
 input[type="text"]:hover {
-	border: solid thin blue;
+	border: solid thin #9f9f9f;
 }
 
-.box > input[type="submit"]{
-	border:2px solid #d8d8d8;
-	padding:8px;
-	background-color:#f4f4f4;
-	font-weight:bold;
-	color:#464646;
+input[type="text"]:active, input[type="text"]:focus {
+	border: solid thin #6394fa;
+	outline: none;
+}
+
+.box > button {
+	padding:7px 10px;
+	margin:16px 8px;
+	font-size: 10px;
+	font-weight: 900;
+	color: #464646;
 }
 
 .words{
+	margin:50px;
 	font-family: Arial, san-serif;
 	font-size: 13px;
 }
+
+
  
 .line{
 	border-top: solid thin #E0E0E0;
 	position: absolute;
-	bottom:20px;
+	bottom:30px;
 	width:100%;
 }
  
@@ -87,12 +114,17 @@ input[type="text"]:hover {
 	bottom:0;
 	right:0;
 	text-align: right;
+
+	margin:10px;
+	font-family: Arial, san-serif;
+	font-size: 13px;
 }
 
 .footer a{
 	padding: 5px 7px;
+	text-decoration: none;
 	color:gray;
 }
 .footer a:hover{
-	text-decoration: none;
+	text-decoration: underline;
 }
